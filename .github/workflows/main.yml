@@ -1,13 +1,26 @@
-name: 'Ticket system Check'
+name: Ticket System Check
 
 on:
-   pull_request:
-     branches:
-       -main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   test-code:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     env:
       PYTHON_VERSION: '3.10'
 
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Run tests
+        run: |
+          cd Ticket
+          pytest
