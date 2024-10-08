@@ -1,7 +1,0 @@
-name: 'Ticket system Check'
-
-jobs:
-  test-code:
-    run-on: ubuntu-latest
-    env:
-      PYTHON_VERSION: '3.10'
