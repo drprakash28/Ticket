@@ -20,10 +20,6 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt  # Make sure you have a requirements.txt in the root directory
-
       - name: Run Ticket.py
         run: |
           python Ticket.py
