@@ -22,4 +22,4 @@ jobs:
 
       - name: Run Ticket.py
         run: |
-          python ''
+          python  src/Ticket.py
