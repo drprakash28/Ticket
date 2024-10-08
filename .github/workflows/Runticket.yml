@@ -23,6 +23,5 @@ jobs:
 
       - name: Run Ticket.py
         run: |
-          cd..
           cd src
           python  Ticket.py
