@@ -8,7 +8,7 @@ class Train:
         self.From=From
         self.To=To
 
-    def ticket(self):
+    def ticket(self): #function is used to Buy Ticket
         print(f'''Name : {self.Name}
         From {self.From} to {self.To}
         Train number : {self.trainno}
