@@ -1,6 +1,6 @@
 from random import randint
 class Train:
-    def __init__(self,Name,From,To):
+    def __init__(self,Name,From,To):#function is used to Buy Ticket
         self.trainno=randint(2222,5555)
         self.seatno=randint(1,100)
         self.Fare=randint(5000,5555)

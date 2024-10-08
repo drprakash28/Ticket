@@ -1,4 +1,3 @@
-#Workflows
 name: Run Ticket Script
 
 on:
@@ -23,5 +22,6 @@ jobs:
 
       - name: Run Ticket.py
         run: |
+          cd..
           cd src
-          python  ticket.py
+          python  Ticket.py
