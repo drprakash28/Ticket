@@ -22,7 +22,6 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Run Ticket.py
-        working-directory: ./Ticket
         run: |
           cd src
-          python  Ticket.py
+          python  ticket.py
