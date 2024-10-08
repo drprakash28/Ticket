@@ -1,3 +1,4 @@
+#workflows
 name: Run Ticket Script
 
 on:
