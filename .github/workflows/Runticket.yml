@@ -1,0 +1,29 @@
+name: Run Ticket Script
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    env:
+      PYTHON_VERSION: '3.10'
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt  # Make sure you have a requirements.txt in the root directory
+
+      - name: Run Ticket.py
+        run: |
+          python Ticket.py
