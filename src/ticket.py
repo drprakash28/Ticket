@@ -15,8 +15,8 @@ class Train:
         Seat number : {self.seatno}
         Fare : {self.Fare}''')
 
-b='Enter name: Ankit'
+b='Enter name: Prakash'
 frm='Enter Destination from: Delhi'
-to='Enter destination to: Patna'
+to='Enter destination to: Lucknow'
 a=Train(b,frm,to)
 a.ticket()
